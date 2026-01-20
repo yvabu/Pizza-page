@@ -1,0 +1,307 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #E6392F;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    min-height: 150px;
+}
+.my-container{
+   width: 100%;
+   margin:  0 auto;
+   display: flex;
+   justify-content:space-around;
+   align-items: center;
+   height: 150px;
+   @media (max-width:1440px) {
+    width: 100%;
+    justify-content: space-evenly;
+   }
+   @media (max-width:1024px) {
+    width: 100%;
+   }
+
+}
+.logo{
+    margin-top: 10px;
+    width: 60px;
+}
+nav ul {
+width: 100%;
+list-style: none;
+display: flex;
+gap: 90px;
+@media (max-width:1024px){
+    width: 100%;
+    gap: 100px;
+}
+@media (max-width:412px) {
+    display: none;
+}
+@media (max-width:853px) {
+    width: 100%;
+    gap:  55px;
+}
+ @media (max-width:540px) {
+        display: none;;
+    }
+ @media (max-width:912px) {
+        width: 100%;
+        gap: 70px;
+    }
+     @media (max-width:820px) {
+        width: 100%;
+        gap: 60px;
+    }
+       @media (max-width:768px) {
+        width: 100%;
+        gap: 40px;
+    }
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+    @media (max-width:412px) {
+        display: inline-block;
+    }
+     @media (max-width:540px) {
+        display: inline-block;
+    }
+}
+
+.button {
+  padding: 10px 20px;
+  background: red;
+  width: 71px;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #E6392F;
+  min-width: 150px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: gray;
+}
+
+/* checkbox ტექნიკა */
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .button + .dropdown-content {
+  display: block;
+}
+
+.logo-text{
+    color: red;
+    font-size: 23px;
+}
+nav a {
+color: white;
+text-decoration: none;
+font-size: 15px;
+}
+nav a:hover{
+    color: red;
+}
+.sect{
+    background-color: #F8E9C8;
+}
+.maincontainer{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.sect-1-text{
+    font-weight: 700 bold;
+    color: black;
+    width: 200px;
+}
+button{
+    border: 2px solid #E6392F ;
+    border-radius: 15px;
+    width: 130px;
+    height: 50px;
+    background-color: #E6392F;
+    color: white;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.pz1{
+    width: 500px;
+    height: 400px;
+    @media (max-width:412px) {
+        width: 200px;
+        height: 150px;
+    }
+    @media (max-width:344px) {
+        width: 130px;
+        height: 150px;
+    }
+    @media (max-width:360px) {
+        width: 100px;
+        height: 100px;
+    }
+     @media (max-width:540px) {
+        width: 300px;
+        height: 200px;
+    }
+    @media (max-width:430px) {
+        width: 200px;
+        height: 150px;
+    }
+    @media (max-width:360px) {
+        width: 150px;
+        height: 100px;
+    }
+    @media (max-width:390px) {
+        width: 130px;
+        height: 100px;
+    }
+
+}
+.sect2{
+    background-image: url(images/depositphotos_730057288-stock-photo-woman-taking-piece-tasty-pizza.jpg);
+    filter: blur(1px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cont{
+    width: 100%;
+    height:800px;
+    margin-top: -32.5px; 
+    
+}
+.mn{
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    padding-top: 40px;
+}  
+.marg{
+    display: flex;
+    justify-content: space-evenly;  
+    @media (max-width:1024px) {
+        width: 100%;
+        justify-content: space-evenly;
+    } 
+   
+}
+.img-2{
+    @media (max-width:412px) {
+        display: none;
+    }
+     @media (max-width:540px) {
+        display: none;
+    }
+}
+
+ h1{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}
+.marg-img{
+    width: 300px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @media (max-width:1024px){
+        width: 250px;
+        height: 100px;
+    }
+    @media (max-width:853px) {
+        width: 200px;
+        height: 150px;
+    }
+}
+.pepp{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    
+}
+.hawailan{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+}
+footer{
+    background-color: #E6392F;
+}
+.fot{
+    width: 100%;
+    height: 200px;
+    margin-top: -18px;
+    @media (max-width:412px) {
+        height: 600px;
+    }
+     @media (max-width:540px) {
+        height: 400px;
+    }
+}
+.fot h1{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 15px;
+}
+.bysaba{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @media  (max-width:412px) {
+        flex-direction: column;
+    }
+     @media (max-width:540px) {
+        flex-direction: column;
+    }
+}
+.bysaba h1{
+     color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.res{
+    text-align: center;
+}
+.res h1{
+     color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+

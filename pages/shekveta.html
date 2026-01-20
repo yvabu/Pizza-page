@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shekveta</title>
+    <link rel="stylesheet" href="../styls/shekveta.css">
+    <link rel="shortcut icon" href="../images/piza-image-logo.webp">
+</head>
+<body>
+     <header>
+        <div class="header">
+            <div class="my-container">
+                <a href="../index.html">
+                    <img class="logo" src="../images/piza-image-logo.webp" alt="">
+                </a>
+                <h1 class="logo-text"> Saba's Pizza</h1>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="../index.html">მთავარი</a>
+                        </li>
+                        <li>
+                            <a href="about.html">ჩვენს შესახებ</a>
+                        </li>
+                        <li>
+                            <a href="menu.html">მენიუ</a>
+                        </li>
+                        <li>
+                            <a href="#">შეკვეთა</a>
+                        </li>
+                        <li>
+                            <a href="kontakti.html">კონტაქტი</a>
+                        </li>
+                        
+                    </ul>
+                </nav>
+                <div class="dropdown">
+                       <input type="checkbox" id="toggle">
+                       <label for="toggle" class="button">drop-down</label>
+                        <div class="dropdown-content">
+                              <a href="../index.html">მთავარი</a>
+                              <a href="about.html">ჩვენს შესახებ</a>
+                              <a href="menu.html">მენიუ</a>
+                              <a href="#">შეკვეთა</a>
+                              <a href="kontakti.html">კონტაქტი</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br>
+    <div class="container">
+
+    <!-- LEFT SIDE – PIZZAS -->
+    <section class="pizza-list">
+        <h2>Select Your Pizza</h2>
+        <label class="card">
+            <input type="radio" name="pizza" required>
+            <div class="info">
+                <img src="../images/Margherita-Pizza.webp" alt="">
+                <h3>Margherita</h3>
+                <p>Price: 15.10₾</p>
+            </div>
+        </label>
+
+        <label class="card">
+            <input type="radio" name="pizza">
+            <div class="info">
+                <img src="../images/Pizza_with_pineapple.jpg" alt="">
+                <h3>Pepperoni</h3>
+                <p>Price: 14.40₾</p>
+            </div>
+        </label>
+
+        <label class="card">
+            <input type="radio" name="pizza">
+            <div class="info">
+                <img src="../images/hawaiian-pizza-16-1200.jpg" alt="">
+                <h3>Hawailan</h3>
+                <p>Price: 15.60₾</p>
+            </div>
+        </label>
+    </section>
+
+
+    <!-- RIGHT SIDE – ORDER FORM -->
+    <section class="order-form">
+        <h2>Order Details</h2>
+
+        <form>
+            <label>Size</label>
+            <select required>
+                <option>Small </option>
+                <option selected>Medium</option>
+                <option>Large</option>
+            </select>
+
+            <label>Extras</label>
+            <div class="extras">
+                <label>
+                    <input type="checkbox" name="" id="">
+                    Extra Cheese (+3₾)</label>
+                <label>
+                    <input type="checkbox">
+                    Olives (+2₾)</label>
+                <label>
+                    <input type="checkbox" name="" id="">
+                     Mushrooms (+2₾)
+                    </label>
+            </div>
+
+            <label>Quantity</label>
+            <input type="number" min="1" value="1" required>
+
+            <label>Full Name</label>
+            <input type="text" required>
+
+            <label>Phone Number</label>
+            <input type="tel" required>
+
+            <label>Delivery Address</label>
+            <textarea required></textarea>
+             
+            <button type="submit">
+                <a href="https://wolt.com/en/geo?pid=google&c=GEO_Web_Search_Brand&af
+                _adset=Wolt&af_keywords=wolt&keyword_match_type=e&matchtype=e&device=c&utm_
+                source=bing&utm_medium=cpc&utm_campaign=GEO_Web_Search_Brand&utm_adgroup=Wolt&utm_
+                keyword=wolt&utm_term=wolt&msclkid=8443411180231ef102c6282d91b522af">Order</a>
+            </button>
+        </form>
+    </section>
+
+</div>
+    <footer>
+        <div class="fot">
+            <h1 style="font-family: 'Courier New', Courier, monospace;">Made By</h1>
+
+            <div class="bysaba">
+                <h1>Saba Qobalia</h1>
+                <h1>Ocupation:Student</h1>
+                <h1>Faculty: Informational Technology</h1>
+            </div>
+
+             
+            <div class="res">
+                <h1>
+                    ©All Rights Reserved by Saba Qobalia,2025™
+                </h1>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
